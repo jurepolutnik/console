@@ -1,0 +1,7 @@
+CONSOLE SETUP
+----------------
+
+ZSH, TMUX, VIM
+
+git submodule init && git submodule update
+git clone --recursive ...
