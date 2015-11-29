@@ -5,3 +5,6 @@ ZSH, TMUX, VIM
 
 git submodule init && git submodule update
 git clone --recursive ...
+
+cd dotvim && make install
+make install
