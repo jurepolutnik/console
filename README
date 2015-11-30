@@ -3,8 +3,16 @@ CONSOLE SETUP
 
 ZSH, TMUX, VIM
 
+Install TMUX
+===============
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+Setup
+==============
 git submodule init && git submodule update
 git clone --recursive ...
 
-cd dotvim && make install
 make install
+cd dotvim && make install
+
+
