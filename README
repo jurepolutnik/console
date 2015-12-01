@@ -1,6 +1,12 @@
 CONSOLE SETUP
 ----------------
 
+map <C-t> :tabnew<CR>
+
+inoremap <C-Tab> <Esc>:tabnext<CR>
+inoremap <C-S-Tab> <Esc>:tabprevious<CR>
+inoremap <C-t> <Esc>:tabnew<CR>
+
 ZSH, TMUX, VIM
 
 Install TMUX
@@ -19,3 +25,5 @@ make install
 cd dotvim && make install
 
 
+nnoremap <C-S-j> :tabprevious
+nnoremap <C-S-k> :tabnext
