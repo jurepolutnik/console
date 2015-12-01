@@ -49,7 +49,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode docker grunt node pip web-search wd history frontend-search dirhistory history-substring-search)
+plugins=(git vi-mode docker web-search frontend-search history-substring-search)
 
 # User configuration
 
@@ -62,11 +62,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+    export EDITOR='vim'
+else
+    export EDITOR='vim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -86,8 +86,8 @@ source $ZSH/oh-my-zsh.sh
 
 #bindkey -v
 #
-bindkey '^k' up-history
-bindkey '^j' down-history
+#bindkey '^k' up-history
+#bindkey '^j' down-history
 #bindkey '^?' backward-delete-char
 #bindkey '^h' backward-delete-char
 #bindkey '^w' backward-kill-word
@@ -99,10 +99,11 @@ bindkey '^j' down-history
 
 # bind UP and DOWN arrow keys
 # # bind k and j for VI mode
-bindkey -M vicmd 'k' history-substring-search-up
-bindkey -M vicmd 'j' history-substring-search-down
+#bindkey -M vicmd 'k' history-substring-search-up
+#bindkey -M vicmd 'j' history-substring-search-down
 
 bindkey '^k' history-substring-search-up
 bindkey '^j' history-substring-search-down
+
 
 

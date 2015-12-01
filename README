@@ -5,7 +5,10 @@ ZSH, TMUX, VIM
 
 Install TMUX
 ===============
+
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+Vim default editor - sudo  update-alternatives --config editor
 
 Setup
 ==============
