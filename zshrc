@@ -49,7 +49,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode docker web-search frontend-search history-substring-search)
+plugins=(git vi-mode go golang virtualenv virtualenvwrapper docker web-search frontend-search history-substring-search)
 
 # User configuration
 
